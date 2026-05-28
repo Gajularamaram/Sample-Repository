@@ -1,0 +1,76 @@
+https://github.com/Gajularamaram/Sample-Repository
+
+
+git remote add SOWJANYA https://github.com/Gajularamaram/Sample-Repository
+
+
+
+70B3-A8F7 
+
+
+
+*********************Process of pushing files to git hub using authentication process*******************
+git init
+
+git status
+
+we need to create some files in local
+touch Kumar.txt SOWJANYA.py kk.sh kunchala.txt
+
+working area(untracked area)---add-->staging area--commit-->local repository--push-->remote repository(GitHub)
+
+to add files to staging area we need use below commands
+
+git add Kumar.txt
+git add *.txt
+git SOWJANYA.py
+git add kk.sh
+
+
+after moving the files to staging area, we can files status with command:
+
+git status
+
+Now  we need to move the files to local repository, so before moving files to local repository we need to connect with GitHub account by linking git username and email.
+
+To update username and email, we need to use below commands:
+
+git config --global user.name "username"
+git config --global user.email "email"
+
+git config --global --list (it will show the list of git usernames are connected to the local system)
+
+after updating user details, now we need to commit the files.
+
+git commit -am "modified files are updated"
+
+git commit -m "new files are updated"
+
+Now files are committed, to view committed files  use below commands:
+
+git log
+
+to view the details and names of committed files:
+git show committed id
+
+git show --pretty="" --name.only committed id (it will show all names of the committed files)
+
+if we want to change the branch, we can use below command as:
+
+git branch -M main
+
+***Now we need push files to remote repository for this activity we need to create a alias name for git repository path:
+
+git remote add origin repository path
+
+to view alias name 
+git remote -v
+
+git push -u origin main   (it will create authentication with user....we need to provide security code when we are pushing code first time)
+
+git push origin main  (final command to push the files into remote GitHub....files will be reflected in GitHub)
+
+
+
+
+
